@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "fastapi-playground"
+version = "0.1.0"
+description = ""
+authors = ["jolynnn8d <jolyn.tan.sq@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["standard"], version = "^0.112.1"}
+pydantic = "^2.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

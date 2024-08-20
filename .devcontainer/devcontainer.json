@@ -1,0 +1,31 @@
+{
+	"name": "fastapi-playground",  // change the name here
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/opt/jolyn/code",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"terminal.integrated.profiles.linux": {
+					"zsh": {
+        				"path": "/bin/zsh"
+      				},
+      				"bash": {
+        				"path": "/bin/bash"
+					}
+				}
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.black-formatter",
+				"ms-python.isort",
+				"ms-python.flake8"
+			]
+		}
+	},
+	"postCreateCommand": "poetry install",
+	"remoteUser": "jolyn"
+}
+
